@@ -34,11 +34,11 @@ Calculus drives our understanding of change and motion, powering modern science,
 
 There will be 5 homework assignments to be turned in via Populi. They will be posted here.
 
-- [Homework 1](assignments/HW1.pdf). Due Friday, Week 2 at 11:30a.
-- [Homework 2](assignments/HW2.pdf). Due Friday, Week 4 at 11:30a.
-- [Homework 3](assignments/HW3.pdf). Due Friday, Week 6 at 11:30a.
-- [Homework 4](assignments/HW4.pdf). Due Friday, Week 8 at 11:30a.
-- [Homework 5](assignments/HW5.pdf). Due Friday, Week 10 at 11:30a.
+- [Homework 1](assignments/HW1.pdf). Due Friday, Jan 16 at 11:30a.
+- [Homework 2](assignments/HW2.pdf). Due Friday, Jan 30 at 11:30a.
+- [Homework 3](assignments/HW3.pdf). Due Friday, Feb 13 at 11:30a.
+- [Homework 4](assignments/HW4.pdf). Due Friday, Feb 27 at 11:30a.
+- [Homework 5](assignments/HW5.pdf). Due Friday, Mar 13 at 11:30a.
 
 ### Homework Rubric
 
@@ -56,11 +56,11 @@ There will be 5 homework assignments to be turned in via Populi. They will be po
 
 There will be 5 quizzes on the Fridays of weeks 2, 4, 6, 8, and 10. The quizzes will be related to the homework, and we will mark up the quizzes in class directly after finishing the quiz.
 
-- Quiz 1: Week 2, Friday
-- Quiz 2: Week 4, Friday
-- Quiz 3: Week 6, Friday
-- Quiz 4: Week 8, Friday
-- Quiz 5: Week 10, Friday
+- Quiz 1: Week 2, Friday (Jan 16)
+- Quiz 2: Week 4, Friday (Jan 30)
+- Quiz 3: Week 6, Friday (Feb 13)
+- Quiz 4: Week 8, Friday (Feb 27)
+- Quiz 5: Week 10, Friday (Mar 13)
 
 ## Final Exam
 
@@ -78,19 +78,19 @@ There will be 5 quizzes and 5 homework assignments. The quizzes will be on the F
 
 ## Rough Schedule
 
-| Week | Topics | Reading |
-|------|--------|---------|
-| 1 | Functions, notation, R basics, visualization | MC: 1-4; MMAC: §1.1 |
-| 2 | Pattern-book functions and data | MC: 5-7; MMAC: §1.2-1.6 |
-| 3 | Parameters, assembling functions, multivariable | MC: 8-10; MMAC: §2.1-2.2 |
-| 4 | Fitting, polynomials, dimensions & units | MC: 11-13, 14-16; MMAC: §2.3-2.4, §1.5, §2.5 |
-| 5 | Continuous change, rate of change, evanescent h | MC: 17-19; MMAC: §3.1-3.3 |
-| 6 | Constructing derivatives, concavity, smoothness | MC: 20-22; MMAC: §4.1-4.3, §3.4 |
-| 7 | Derivatives of assembled functions, optimization | MC: 23-24; MMAC: §4.4-4.5, §5.1-5.2 |
-| 8 | Optimization, partial derivatives, gradients | MC: 24-26; MMAC: §5.3-5.4 |
-| 9 | Taylor polynomials, review & synthesis | MC: 27; MMAC: Ch. 7 |
-| 10 | Review and synthesis | MC: 27; MMAC: Ch. 7 |
-| 11 | **Final exam week** | |
+| Week | Dates | Topics | Reading |
+|------|-------|--------|---------|
+| 1 | Jan 5 | Functions, notation, R basics, visualization | MC: 1-4; MMAC: §1.1 |
+| 2 | Jan 12 | Pattern-book functions and data | MC: 5-7; MMAC: §1.2-1.6 |
+| 3 | Jan 19 | Parameters, assembling functions, multivariable | MC: 8-10; MMAC: §2.1-2.2 |
+| 4 | Jan 26 | Fitting, polynomials, dimensions & units | MC: 11-13, 14-16; MMAC: §2.3-2.4, §1.5, §2.5 |
+| 5 | Feb 2 | Continuous change, rate of change, evanescent h | MC: 17-19; MMAC: §3.1-3.3 |
+| 6 | Feb 9 | Constructing derivatives, concavity, smoothness | MC: 20-22; MMAC: §4.1-4.3, §3.4 |
+| 7 | Feb 16 | Derivatives of assembled functions, optimization | MC: 23-24; MMAC: §4.4-4.5, §5.1-5.2 |
+| 8 | Feb 23 | Optimization, partial derivatives, gradients | MC: 24-26; MMAC: §5.3-5.4 |
+| 9 | Mar 2 | Taylor polynomials, review & synthesis | MC: 27; MMAC: Ch. 7 |
+| 10 | Mar 9 | Review and synthesis | MC: 27; MMAC: Ch. 7 |
+| 11 | Mar 16 | **Final exam week** | |
 
 ## Outline of Topics
 
