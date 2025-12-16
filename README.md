@@ -78,19 +78,19 @@ There will be 5 quizzes and 5 homework assignments. The quizzes will be on the F
 
 ## Rough Schedule
 
-| Week | Dates | Topics | Reading |
-|------|-------|--------|---------|
-| 1 | Jan 5 | Functions, notation, R basics, visualization | MC: 1-4; MMAC: §1.1 |
-| 2 | Jan 12 | Pattern-book functions and data | MC: 5-7; MMAC: §1.2-1.6 |
-| 3 | Jan 19 | Parameters, assembling functions, multivariable | MC: 8-10; MMAC: §2.1-2.2 |
-| 4 | Jan 26 | Fitting, polynomials, dimensions & units | MC: 11-13, 14-16; MMAC: §2.3-2.4, §1.5, §2.5 |
-| 5 | Feb 2 | Continuous change, rate of change, evanescent h | MC: 17-19; MMAC: §3.1-3.3 |
-| 6 | Feb 9 | Constructing derivatives, concavity, smoothness | MC: 20-22; MMAC: §4.1-4.3, §3.4 |
-| 7 | Feb 16 | Derivatives of assembled functions, optimization | MC: 23-24; MMAC: §4.4-4.5, §5.1-5.2 |
-| 8 | Feb 23 | Optimization, partial derivatives, gradients | MC: 24-26; MMAC: §5.3-5.4 |
-| 9 | Mar 2 | Taylor polynomials, review & synthesis | MC: 27; MMAC: Ch. 7 |
-| 10 | Mar 9 | Review and synthesis | MC: 27; MMAC: Ch. 7 |
-| 11 | Mar 16 | **Final exam week** | |
+| Week | Topics | Reading |
+|------|--------|---------|
+| 1 (Jan 5) | Functions, notation, R basics, visualization | MC: 1-4; MMAC: §1.1 |
+| 2 (Jan 12) | Pattern-book functions and data | MC: 5-7; MMAC: §1.2-1.6 |
+| 3 (Jan 19) | Parameters, assembling functions, multivariable | MC: 8-10; MMAC: §2.1-2.2 |
+| 4 (Jan 26) | Fitting, polynomials, dimensions & units | MC: 11-13, 14-16; MMAC: §2.3-2.4, §1.5, §2.5 |
+| 5 (Feb 2) | Continuous change, rate of change, evanescent h | MC: 17-19; MMAC: §3.1-3.3 |
+| 6 (Feb 9) | Constructing derivatives, concavity, smoothness | MC: 20-22; MMAC: §4.1-4.3, §3.4 |
+| 7 (Feb 16) | Derivatives of assembled functions, optimization | MC: 23-24; MMAC: §4.4-4.5, §5.1-5.2 |
+| 8 (Feb 23) | Optimization, partial derivatives, gradients | MC: 24-26; MMAC: §5.3-5.4 |
+| 9 (Mar 2) | Taylor polynomials, review & synthesis | MC: 27; MMAC: Ch. 7 |
+| 10 (Mar 9) | Review and synthesis | MC: 27; MMAC: Ch. 7 |
+| 11 (Mar 16) | **Final exam week** | |
 
 ## Outline of Topics
 
