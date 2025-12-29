@@ -1,6 +1,6 @@
 # Calculus I
 
-Welcome to the Winter 2026 edition of Calculus I (STM 1001, 4.5 credits)! All course materials can be found on this GitHub page. Please see the [course syllabus](course_outline.pdf) for links and descriptions of the readings mentioned below.
+Welcome to the Winter 2026 edition of Calculus I (STM 1001, 4.5 credits)! All course materials can be found on this GitHub page. Please see the [course syllabus](syllabus/course_outline.pdf) for links and descriptions of the readings mentioned below.
 
 **Instructor:**  
 - Prof. David Puelz. Individual meetings can be booked at the following [link](https://calendly.com/dpuelz). Office hours: Please consult the webpage.
