@@ -15,15 +15,10 @@ Calculus drives our understanding of change and motion, powering modern science,
 
 ## Course Objectives
 
-- Understand functions as the fundamental objects for modeling relationships between quantities
-- Master the nine "pattern-book" functions and know when to apply each in modeling contexts
-- Use R to define, visualize, and explore mathematical functions computationally
-- Assemble complex models from simple functions using linear combinations, products, and composition
-- Fit mathematical models to data using least squares and interpret the results
-- Understand derivatives as instantaneous rates of change and compute them for common functions
-- Apply differentiation to solve optimization problems in science, engineering, and economics
-- Use dimensional analysis to check work and derive scaling laws
-- Approximate functions locally using linear and polynomial approximations
+- Understand and apply functions as tools for mathematical modeling
+- Use computational methods to explore and analyze mathematical relationships
+- Master differentiation and apply it to solve optimization problems
+- Develop skills in mathematical analysis and approximation techniques
 
 ## Required Readings
 
