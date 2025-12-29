@@ -81,8 +81,8 @@ There will be 5 quizzes and 5 homework assignments. The quizzes will be on the F
 | Week | Topics | Reading |
 |------|--------|---------|
 | 1 (Jan 5) | Functions, notation, R basics, visualization | MC: 1-4; MMAC: §1.1 |
-| 2 (Jan 12) | Pattern-book functions and data | MC: 5-7; MMAC: §1.2-1.6 |
-| 3 (Jan 19) | Parameters, assembling functions, multivariable | MC: 8-10; MMAC: §2.1-2.2 |
+| 2 (Jan 12) | Pattern-book functions and data | MC: 5-7; MMAC: §1.3-1.6 |
+| 3 (Jan 19) | Parameters, assembling functions, multivariable | MC: 8-10; MMAC: §1.2, §2.1-2.2 |
 | 4 (Jan 26) | Fitting, polynomials, dimensions & units | MC: 11-13, 14-16; MMAC: §2.3-2.4, §1.5, §2.5 |
 | 5 (Feb 2) | Continuous change, rate of change, evanescent h | MC: 17-19; MMAC: §3.1-3.3 |
 | 6 (Feb 9) | Constructing derivatives, concavity, smoothness | MC: 20-22; MMAC: §4.1-4.3, §3.4 |
@@ -111,7 +111,7 @@ Slides: [TBA](slides/)
 
 Readings:
 - _Mosaic Calculus_ (MC) -- Chapters 5-7
-- _Mathematical Modeling and Applied Calculus_ (MMAC) -- §1.2-1.6
+- _Mathematical Modeling and Applied Calculus_ (MMAC) -- §1.3-1.6
 
 Code for class:
 - [TBA](code/)
@@ -122,7 +122,7 @@ Slides: [TBA](slides/)
 
 Readings:
 - _Mosaic Calculus_ (MC) -- Chapters 8-10
-- _Mathematical Modeling and Applied Calculus_ (MMAC) -- §2.1-2.2
+- _Mathematical Modeling and Applied Calculus_ (MMAC) -- §1.2, §2.1-2.2
 
 Code for class:
 - [TBA](code/)
