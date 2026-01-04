@@ -29,11 +29,11 @@ Calculus drives our understanding of change and motion, powering modern science,
 
 There will be 5 homework assignments to be turned in via Populi. They will be posted here.
 
-- [Homework 1](assignments/HW1.pdf). Due Friday, Jan 16 at 11:30a.
-- [Homework 2](assignments/HW2.pdf). Due Friday, Jan 30 at 11:30a.
-- [Homework 3](assignments/HW3.pdf). Due Friday, Feb 13 at 11:30a.
-- [Homework 4](assignments/HW4.pdf). Due Friday, Feb 27 at 11:30a.
-- [Homework 5](assignments/HW5.pdf). Due Friday, Mar 13 at 11:30a.
+- <span style="color: gray;">Homework 1. Due Friday, Jan 16 at 11:30a.</span>
+- <span style="color: gray;">Homework 2. Due Friday, Jan 30 at 11:30a.</span>
+- <span style="color: gray;">Homework 3. Due Friday, Feb 13 at 11:30a.</span>
+- <span style="color: gray;">Homework 4. Due Friday, Feb 27 at 11:30a.</span>
+- <span style="color: gray;">Homework 5. Due Friday, Mar 13 at 11:30a.</span>
 
 ### Homework Rubric
 
