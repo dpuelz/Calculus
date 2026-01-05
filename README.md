@@ -94,7 +94,8 @@ There will be 5 quizzes and 5 homework assignments. The quizzes will be on the F
 Slides: [Functions, Computing & Pattern-Book Functions](slides/lecture-functions_patterns.pdf)
 
 Code for class:
-- [TBA](code/)
+- [Introduction to R](code/intro_to_R.R)
+- [Introduction to Functions](code/intro_functions.R)
 
 Readings:
 - _Mosaic Calculus_ (MC) -- Chapters 1-4
