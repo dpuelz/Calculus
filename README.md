@@ -29,7 +29,7 @@ Calculus drives our understanding of change and motion, powering modern science,
 
 There will be 5 homework assignments to be turned in via Populi. They will be posted here.
 
-- <span style="color: gray;">Homework 1. Due Friday, Jan 16 at 11:30a.</span>
+- [Homework 1](assignments/HW1.pdf). Due Friday, Jan 16 at 11:30a.
 - <span style="color: gray;">Homework 2. Due Friday, Jan 30 at 11:30a.</span>
 - <span style="color: gray;">Homework 3. Due Friday, Feb 13 at 11:30a.</span>
 - <span style="color: gray;">Homework 4. Due Friday, Feb 27 at 11:30a.</span>
@@ -91,7 +91,7 @@ There will be 5 quizzes and 5 homework assignments. The quizzes will be on the F
 
 ### (0) Introduction and Functions (computing, pattern-book functions, visualization)
 
-Slides: [TBA](slides/)
+Slides: [Functions, Computing & Pattern-Book Functions](slides/lecture-functions_patterns.pdf)
 
 Code for class:
 - [TBA](code/)
