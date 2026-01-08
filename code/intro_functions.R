@@ -37,17 +37,17 @@ f(2)   # f(2) = 7
 f(-5)  # f(-5) = -7
 
 # Visualize it:
-slice_plot(f(x) ~ x, domain(x = -5:5))
+slice_plot(f(x) ~ x, domain(x = -20:40))
 
 # Example 2: Quadratic function
-g <- makeFun(x^2 - 2*x + 1 ~ x)
+g <- makeFun(x^2 ~ x)
 g(0)   # g(0) = 1
 g(1)   # g(1) = 0
 g(2)   # g(2) = 1
 g(3)   # g(3) = 4
 
 # Visualize it:
-slice_plot(g(x) ~ x, domain(x = -2:4))
+slice_plot(g(x) ~ x, domain(x = 0:5))
 
 # Example 3: Exponential function
 h <- makeFun(2^x ~ x)
@@ -57,7 +57,12 @@ h(2)   # h(2) = 4
 h(3)   # h(3) = 8
 
 # Visualize it:
-slice_plot(h(x) ~ x, domain(x = -2:4))
+slice_plot(h(x) ~ x, domain(x = 0:5))
+
+par(mfrow=c(1,2))
+slice_plot(h(x) ~ x, domain(x = 0:5))
+slice_plot(g(x) ~ x, domain(x = 0:5))
+
 
 # Example 4: Multiple inputs at once
 inputs <- c(-2, -1, 0, 1, 2, 3)

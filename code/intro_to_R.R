@@ -13,8 +13,8 @@ sqrt(16)
 2^3
 
 # Variables
-x <- 5
-y <- 10
+x = 5
+y = 10
 x + y
 
 # ============================================================================
@@ -48,7 +48,7 @@ students <- data.frame(
 
 # View the data
 students
-head(students)
+head(students,3)
 str(students)  # Structure of the data
 
 # Access columns
