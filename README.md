@@ -89,7 +89,7 @@ There will be 5 quizzes and 5 homework assignments. The quizzes will be on the F
 
 ## Outline of Topics
 
-### (0) Introduction and Functions (computing, pattern-book functions, visualization)
+### (0) Introduction and Functions (computing, pattern-book functions, visualization, and data)
 
 Slides: [Functions, Computing & Pattern-Book Functions](slides/lecture-functions_patterns.pdf)
 
@@ -98,21 +98,10 @@ Code for class:
 - [Introduction to Functions](code/intro_functions.R)
 
 Readings:
-- _Mosaic Calculus_ (MC) -- Chapters 1-4
+- _Mosaic Calculus_ (MC) -- Chapters 1-7
 - _Mathematical Modeling and Applied Calculus_ (MMAC) -- §1.1-1.7
 
-### (1) Pattern-Book Functions and Data
-
-Slides: [TBA](slides/)
-
-Readings:
-- _Mosaic Calculus_ (MC) -- Chapters 5-7
-- _Mathematical Modeling and Applied Calculus_ (MMAC) -- §1.1-1.7
-
-Code for class:
-- [TBA](code/)
-
-### (2) Parameters, Assembling Functions, and Multivariable Functions
+### (1) Parameters, Assembling Functions, and Multivariable Functions
 
 Slides: [TBA](slides/)
 
@@ -123,7 +112,7 @@ Readings:
 Code for class:
 - [TBA](code/)
 
-### (3) Fitting, Polynomials, Dimensions & Units
+### (2) Fitting, Polynomials, Dimensions & Units
 
 Slides: [TBA](slides/)
 
@@ -134,7 +123,7 @@ Readings:
 Code for class:
 - [TBA](code/)
 
-### (4) Continuous Change, Rate of Change, Evanescent h
+### (3) Continuous Change, Rate of Change, Evanescent h
 
 Slides: [TBA](slides/)
 
@@ -145,7 +134,7 @@ Readings:
 Code for class:
 - [TBA](code/)
 
-### (5) Constructing Derivatives, Concavity, Smoothness
+### (4) Constructing Derivatives, Concavity, Smoothness
 
 Slides: [TBA](slides/)
 
@@ -156,7 +145,7 @@ Readings:
 Code for class:
 - [TBA](code/)
 
-### (6) Derivatives of Assembled Functions, Optimization
+### (5) Derivatives of Assembled Functions, Optimization
 
 Slides: [TBA](slides/)
 
@@ -167,7 +156,7 @@ Readings:
 Code for class:
 - [TBA](code/)
 
-### (7) Optimization, Partial Derivatives, Gradients
+### (6) Optimization, Partial Derivatives, Gradients
 
 Slides: [TBA](slides/)
 
@@ -178,7 +167,7 @@ Readings:
 Code for class:
 - [TBA](code/)
 
-### (8) Taylor Polynomials and Synthesis
+### (7) Taylor Polynomials and Synthesis
 
 Slides: [TBA](slides/)
 
