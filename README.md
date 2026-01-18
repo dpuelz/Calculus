@@ -93,6 +93,11 @@ There will be 5 quizzes and 5 homework assignments. The quizzes will be on the F
 
 Slides: [Functions, Computing & Pattern-Book Functions](slides/lecture-functions_patterns.pdf)
 
+Lecture Notes:
+- [Lecture 01: Pattern-Book Functions](lectures/lecture01_pattern_book_functions.pdf)
+- [Lecture 02: Visualizing Functions](lectures/lecture02_visualizing_functions.pdf)
+- [Lecture 03: Describing Functions](lectures/lecture03_describing_functions.pdf)
+
 Code for class:
 - [Introduction to R](code/intro_to_R.R)
 - [Introduction to Functions](code/intro_functions.R)
@@ -104,6 +109,9 @@ Readings:
 ### (1) Parameters, Assembling Functions, and Multivariable Functions
 
 Slides: [TBA](slides/)
+
+Lecture Notes:
+- [Lecture 04: Parameters](lectures/lecture04_parameters.pdf)
 
 Readings:
 - _Mosaic Calculus_ (MC) -- Chapters 8-10
