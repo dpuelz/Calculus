@@ -109,8 +109,6 @@ Readings:
 
 ### (1) Parameters, Assembling Functions, and Multivariable Functions
 
-Slides: [TBA](slides/)
-
 Lecture Notes:
 - [Lecture 04: Parameters](lectures/lecture04_parameters.pdf)
 
@@ -123,8 +121,6 @@ Code for class:
 
 ### (2) Fitting, Polynomials, Dimensions & Units
 
-Slides: [TBA](slides/)
-
 Readings:
 - _Mosaic Calculus_ (MC) -- Chapters 11-16
 - _Mathematical Modeling and Applied Calculus_ (MMAC) -- §2.3-2.5
@@ -133,8 +129,6 @@ Code for class:
 - [TBA](code/)
 
 ### (3) Continuous Change, Rate of Change, Evanescent h
-
-Slides: [TBA](slides/)
 
 Readings:
 - _Mosaic Calculus_ (MC) -- Chapters 17-19
@@ -145,8 +139,6 @@ Code for class:
 
 ### (4) Constructing Derivatives, Concavity, Smoothness
 
-Slides: [TBA](slides/)
-
 Readings:
 - _Mosaic Calculus_ (MC) -- Chapters 20-22
 - _Mathematical Modeling and Applied Calculus_ (MMAC) -- §4.1-4.3, §3.4
@@ -155,8 +147,6 @@ Code for class:
 - [TBA](code/)
 
 ### (5) Derivatives of Assembled Functions, Optimization
-
-Slides: [TBA](slides/)
 
 Readings:
 - _Mosaic Calculus_ (MC) -- Chapters 23-24
@@ -167,8 +157,6 @@ Code for class:
 
 ### (6) Optimization, Partial Derivatives, Gradients
 
-Slides: [TBA](slides/)
-
 Readings:
 - _Mosaic Calculus_ (MC) -- Chapters 24-26
 - _Mathematical Modeling and Applied Calculus_ (MMAC) -- §5.3-5.4
@@ -177,8 +165,6 @@ Code for class:
 - [TBA](code/)
 
 ### (7) Taylor Polynomials and Synthesis
-
-Slides: [TBA](slides/)
 
 Readings:
 - _Mosaic Calculus_ (MC) -- Chapter 27
