@@ -31,13 +31,10 @@ There will be 5 homework assignments to be turned in via Populi. They will be po
 
 - [Homework 1](assignments/HW1.pdf). Due Friday, Jan 16 at 11:30a.
 - [Homework 2](assignments/HW2.pdf). Due Friday, Jan 30 at 11:30a.
+  - Data: [Austin restaurants dataset](data/austin_restaurants.csv)
 - <span style="color: gray;">Homework 3. Due Friday, Feb 13 at 11:30a.</span>
 - <span style="color: gray;">Homework 4. Due Friday, Feb 27 at 11:30a.</span>
 - <span style="color: gray;">Homework 5. Due Friday, Mar 13 at 11:30a.</span>
-
-## Data
-
-- [Austin restaurants dataset](data/austin_restaurants.csv)
 
 ### Homework Rubric
 
