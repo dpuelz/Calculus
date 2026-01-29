@@ -111,6 +111,7 @@ Readings:
 
 Lecture Notes:
 - [Lecture 04: Parameters](lectures/lecture04_parameters.pdf)
+- [Lecture 05: Assembling Functions](lectures/lecture05_assembling_functions.pdf)
 
 Readings:
 - _Mosaic Calculus_ (MC) -- Chapters 8-10
