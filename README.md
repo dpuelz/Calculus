@@ -79,7 +79,7 @@ There will be 5 quizzes and 5 homework assignments. The quizzes will be on the F
 | 1 (Jan 5) | Functions, notation, R basics, visualization | MC: 1-4; MMAC: §1.1-1.7 |
 | 2 (Jan 12) | Pattern-book functions and data | MC: 5-7; MMAC: §1.1-1.7 |
 | 3 (Jan 19) | Parameters, assembling functions, multivariable | MC: 8-10; MMAC: §1.2, §2.1-2.2 |
-| 4 (Jan 26) | Fitting, polynomials, dimensions & units | MC: 11-16; MMAC: §2.3-2.5 |
+| 4 (Jan 26) | Fitting, polynomials, dimensions & units | MC: 11-16; MMAC: §2.3-2.4, §1.5, §2.5 |
 | 5 (Feb 2) | Continuous change, rate of change, evanescent h | MC: 17-19; MMAC: §3.1-3.3 |
 | 6 (Feb 9) | Constructing derivatives, concavity, smoothness | MC: 20-22; MMAC: §4.1-4.3, §3.4 |
 | 7 (Feb 16) | Derivatives of assembled functions, optimization | MC: 23-24; MMAC: §4.4-4.5, §5.1-5.2 |
@@ -90,7 +90,11 @@ There will be 5 quizzes and 5 homework assignments. The quizzes will be on the F
 
 ## Outline of Topics
 
+The sections below are keyed to the **Rough Schedule**. Each block lists which weeks it covers and the materials we use in class.
+
 ### (0) Introduction and Functions (computing, pattern-book functions, visualization, and data)
+
+**Schedule:** Weeks 1–2 (Quiz 1; [HW1](assignments/HW1.pdf) due Friday of Week 2)
 
 Slides: [Functions, Computing & Pattern-Book Functions](slides/lecture-functions_patterns.pdf)
 
@@ -109,6 +113,8 @@ Readings:
 
 ### (1) Parameters, Assembling Functions, and Multivariable Functions
 
+**Schedule:** Week 3
+
 Lecture Notes:
 - [Lecture 04: Parameters](lectures/lecture04_parameters.pdf)
 - [Lecture 05: Assembling Functions](lectures/lecture05_assembling_functions.pdf)
@@ -122,14 +128,18 @@ Code for class:
 
 ### (2) Fitting, Polynomials, Dimensions & Units
 
+**Schedule:** Week 4 (Quiz 2; [HW2](assignments/HW2.pdf) due Friday—data: [Austin restaurants](data/austin_restaurants.csv))
+
 Readings:
 - _Mosaic Calculus_ (MC) -- Chapters 11-16
-- _Mathematical Modeling and Applied Calculus_ (MMAC) -- §2.3-2.5
+- _Mathematical Modeling and Applied Calculus_ (MMAC) -- §2.3-2.4, §1.5, §2.5
 
 Code for class:
 - [TBA](code/)
 
 ### (3) Continuous Change, Rate of Change, Evanescent h
+
+**Schedule:** Week 5
 
 Readings:
 - _Mosaic Calculus_ (MC) -- Chapters 17-19
@@ -140,6 +150,8 @@ Code for class:
 
 ### (4) Constructing Derivatives, Concavity, Smoothness
 
+**Schedule:** Week 6
+
 Readings:
 - _Mosaic Calculus_ (MC) -- Chapters 20-22
 - _Mathematical Modeling and Applied Calculus_ (MMAC) -- §4.1-4.3, §3.4
@@ -148,6 +160,8 @@ Code for class:
 - [TBA](code/)
 
 ### (5) Derivatives of Assembled Functions, Optimization
+
+**Schedule:** Week 7
 
 Readings:
 - _Mosaic Calculus_ (MC) -- Chapters 23-24
@@ -158,6 +172,8 @@ Code for class:
 
 ### (6) Optimization, Partial Derivatives, Gradients
 
+**Schedule:** Week 8
+
 Readings:
 - _Mosaic Calculus_ (MC) -- Chapters 24-26
 - _Mathematical Modeling and Applied Calculus_ (MMAC) -- §5.3-5.4
@@ -166,6 +182,8 @@ Code for class:
 - [TBA](code/)
 
 ### (7) Taylor Polynomials and Synthesis
+
+**Schedule:** Weeks 9–10 (review and synthesis)
 
 Readings:
 - _Mosaic Calculus_ (MC) -- Chapter 27
