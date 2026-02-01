@@ -130,6 +130,9 @@ Code for class:
 
 **Schedule:** Week 4 (Quiz 2; [HW2](assignments/HW2.pdf) due Friday—data: [Austin restaurants](data/austin_restaurants.csv))
 
+Lecture Notes:
+- [Lecture 06: Dimensions and Units](lectures/lecture06_dimensions_units.pdf)
+
 Readings:
 - _Mosaic Calculus_ (MC) -- Chapters 11-16
 - _Mathematical Modeling and Applied Calculus_ (MMAC) -- §2.3-2.4, §1.5, §2.5
