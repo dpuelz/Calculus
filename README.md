@@ -144,6 +144,10 @@ Code for class:
 
 **Schedule:** Week 5
 
+Lecture Notes:
+- [Lecture 07: Galileo and the Discovery of Continuous Change](lectures/lecture07_galileo_increments.pdf)
+- [Lecture 08: The Derivative — Instantaneous Rate of Change](lectures/lecture08_derivative.pdf)
+
 Readings:
 - _Mosaic Calculus_ (MC) -- Chapters 17-19
 - _Mathematical Modeling and Applied Calculus_ (MMAC) -- §3.1-3.3
@@ -154,6 +158,9 @@ Code for class:
 ### (4) Constructing Derivatives, Concavity, Smoothness
 
 **Schedule:** Week 6
+
+Lecture Notes:
+- [Lecture 09: Derivative Notation and Applications](lectures/lecture09_applications.pdf)
 
 Readings:
 - _Mosaic Calculus_ (MC) -- Chapters 20-22
