@@ -153,7 +153,7 @@ Readings:
 - _Mathematical Modeling and Applied Calculus_ (MMAC) -- §3.1-3.3
 
 Code for class:
-- [TBA](code/)
+- [Increments, rate of change, and secant segments](code/increments_rate_of_change.R)
 
 ### (4) Constructing Derivatives, Concavity, Smoothness
 
