@@ -57,10 +57,10 @@ h_user <- 0.5
 increment_table(x_sq, seq(0, 6, by = h_user), h = h_user)
 
 # ---- Plots: change h (and title updates automatically) ----
-h <- 1
+h <- 6
 plot_function_with_segments(x_sq, 0, 6, h = h, main = bquote(x(t) == t^2 ~ ",  h = " ~ .(h)))
 
-h <- 0.5
+h <- 0.005
 plot_function_with_segments(x_sq, 0, 6, h = h, main = bquote(x(t) == t^2 ~ ",  h = " ~ .(h)))
 
 h <- 0.2
@@ -69,7 +69,7 @@ plot_function_with_segments(x_sq, 0, 6, h = h, main = bquote(x(t) == t^2 ~ ",  h
 par(mfrow = c(1, 2))
 h <- 1
 plot_function_with_segments(x_cube, 0, 4, h = h, main = bquote(x(t) == t^3 ~ ",  h = " ~ .(h)))
-h <- 0.25
+h <- 0.1
 plot_function_with_segments(x_cube, 0, 4, h = h, main = bquote(x(t) == t^3 ~ ",  h = " ~ .(h)))
 par(mfrow = c(1, 1))
 
