@@ -162,7 +162,7 @@ Code for class:
 Lecture Notes:
 - [Lecture 09: Derivative Notation and Applications](lectures/lecture09_applications.pdf)
 - [Lecture 10: Constructing Derivatives](lectures/lecture10_constructing_derivatives.pdf)
-- [Lecture 11: Concavity and Curvature](lectures/lecture11_concavity_curvature.pdf)
+- [Lecture 11: Concavity and the Second Derivative](lectures/lecture11_concavity_curvature.pdf)
 
 Readings:
 - _Mosaic Calculus_ (MC) -- Chapters 20-22
