@@ -94,7 +94,7 @@ The sections below are keyed to the **Rough Schedule**. Each block lists which w
 
 ### (0) Introduction and Functions (computing, pattern-book functions, visualization, and data)
 
-**Schedule:** Weeks 1–2 (Quiz 1; [HW1](assignments/HW1.pdf) due Friday of Week 2)
+**Schedule:** Weeks 1–2 ([HW1](assignments/HW1.pdf) due Friday of Week 2)
 
 Slides: [Functions, Computing & Pattern-Book Functions](slides/lecture-functions_patterns.pdf)
 
@@ -128,7 +128,7 @@ Code for class:
 
 ### (2) Fitting, Polynomials, Dimensions & Units
 
-**Schedule:** Week 4 (Quiz 2; [HW2](assignments/HW2.pdf) due Friday—data: [Austin restaurants](data/austin_restaurants.csv))
+**Schedule:** Week 4 ([HW2](assignments/HW2.pdf) due Friday—data: [Austin restaurants](data/austin_restaurants.csv))
 
 Lecture Notes:
 - [Lecture 06: Dimensions and Units](lectures/lecture06_dimensions_units.pdf)
@@ -190,7 +190,7 @@ Code for class:
 
 ### (6) Optimization, Partial Derivatives, Gradients
 
-**Schedule:** Week 8
+**Schedule:** Week 8 ([HW4](assignments/HW4.pdf) due Friday of Week 8)
 
 Lecture Notes:
 - [Lecture 14: Multivariable Optimization](lectures/lecture14_optimization.pdf)
