@@ -33,7 +33,7 @@ There will be 5 homework assignments to be turned in via Populi. They will be po
 - [Homework 2](assignments/HW2.pdf). Due Friday, Jan 30 at 11:30a.
   - Data: [Austin restaurants dataset](data/austin_restaurants.csv)
 - [Homework 3](assignments/HW3.pdf). Due Friday, Feb 13 at 11:30a.
-- <span style="color: gray;">Homework 4. Due Friday, Feb 27 at 11:30a.</span>
+- [Homework 4](assignments/HW4.pdf). Due Friday, Feb 27 at 11:30a.
 - <span style="color: gray;">Homework 5. Due Friday, Mar 13 at 11:30a.</span>
 
 ### Homework Rubric
@@ -162,7 +162,7 @@ Code for class:
 Lecture Notes:
 - [Lecture 09: Derivative Notation and Applications](lectures/lecture09_applications.pdf)
 - [Lecture 10: Constructing Derivatives](lectures/lecture10_constructing_derivatives.pdf)
-- [Lecture 11: Concavity and the Second Derivative](lectures/lecture11_concavity_curvature.pdf)
+- [Lecture 11: Concavity and the Second Derivative](lectures/lecture11_concavity_2ndderivative.pdf)
 
 Readings:
 - _Mosaic Calculus_ (MC) -- Chapters 20-22
@@ -175,6 +175,12 @@ Code for class:
 
 **Schedule:** Week 7
 
+Lecture Notes:
+- [Lecture 13: Partial Derivatives and Gradients](lectures/lecture13_partial_derivatives_gradients.pdf)
+
+Code for class:
+- [Partial Derivatives and Gradients](code/lecture13_partial_derivatives_gradients.R)
+
 Readings:
 - _Mosaic Calculus_ (MC) -- Chapters 23-24
 - _Mathematical Modeling and Applied Calculus_ (MMAC) -- §4.4-4.5, §5.1-5.2
@@ -185,6 +191,12 @@ Code for class:
 ### (6) Optimization, Partial Derivatives, Gradients
 
 **Schedule:** Week 8
+
+Lecture Notes:
+- [Lecture 14: Multivariable Optimization](lectures/lecture14_optimization.pdf)
+
+Code for class:
+- [Multivariable Optimization](code/lecture14_optimization.R)
 
 Readings:
 - _Mosaic Calculus_ (MC) -- Chapters 24-26
