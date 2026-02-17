@@ -82,8 +82,8 @@ There will be 5 quizzes and 5 homework assignments. The quizzes will be on the F
 | 4 (Jan 26) | Fitting, polynomials, dimensions & units | MC: 11-16; MMAC: §2.3-2.4, §1.5, §2.5 |
 | 5 (Feb 2) | Continuous change, rate of change, evanescent h | MC: 17-19; MMAC: §3.1-3.3 |
 | 6 (Feb 9) | Constructing derivatives, concavity, smoothness | MC: 20-22; MMAC: §4.1-4.3, §3.4 |
-| 7 (Feb 16) | Derivatives of assembled functions, optimization | MC: 23-24; MMAC: §4.4-4.5, §5.1-5.2 |
-| 8 (Feb 23) | Optimization, partial derivatives, gradients | MC: 24-26; MMAC: §5.3-5.4 |
+| 7 (Feb 16) | Partial derivatives, gradients | MC: 23-24; MMAC: §4.4-4.5, §5.1-5.2 |
+| 8 (Feb 23) | Multivariable optimization | MC: 24-26; MMAC: §5.3-5.4 |
 | 9 (Mar 2) | Taylor polynomials, review & synthesis | MC: 27; MMAC: Ch. 7 |
 | 10 (Mar 9) | Review and synthesis | MC: 27; MMAC: Ch. 7 |
 | 11 (Mar 16) | **Final exam week** | |
@@ -171,7 +171,7 @@ Readings:
 Code for class:
 - [TBA](code/)
 
-### (5) Derivatives of Assembled Functions, Optimization
+### (5) Partial Derivatives and Gradients
 
 **Schedule:** Week 7
 
@@ -185,10 +185,7 @@ Readings:
 - _Mosaic Calculus_ (MC) -- Chapters 23-24
 - _Mathematical Modeling and Applied Calculus_ (MMAC) -- §4.4-4.5, §5.1-5.2
 
-Code for class:
-- [TBA](code/)
-
-### (6) Optimization, Partial Derivatives, Gradients
+### (6) Multivariable Optimization
 
 **Schedule:** Week 8 ([HW4](assignments/HW4.pdf) due Friday of Week 8)
 
@@ -201,9 +198,6 @@ Code for class:
 Readings:
 - _Mosaic Calculus_ (MC) -- Chapters 24-26
 - _Mathematical Modeling and Applied Calculus_ (MMAC) -- §5.3-5.4
-
-Code for class:
-- [TBA](code/)
 
 ### (7) Taylor Polynomials and Synthesis
 
