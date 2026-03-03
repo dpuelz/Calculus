@@ -88,8 +88,8 @@ There will be 5 quizzes and 5 homework assignments. The quizzes will be on the F
 | 6 (Feb 9) | Constructing derivatives, concavity, smoothness | MC: 20-22; MMAC: §4.1-4.3, §3.4 |
 | 7 (Feb 16) | Partial derivatives, gradients | MC: 23-24; MMAC: §4.4-4.5, §5.1-5.2 |
 | 8 (Feb 23) | Multivariable optimization | MC: 24-26; MMAC: §5.3-5.4 |
-| 9 (Mar 2) | Gradient descent and review and synthesis | MC: 27; MMAC: Ch. 7 |
-| 10 (Mar 9) | Gradient descent and review and synthesis | MC: 27; MMAC: Ch. 7 |
+| 9 (Mar 2) | Gradient descent | MC: 27; MMAC: Ch. 7 |
+| 10 (Mar 9) | Review and synthesis | MC: 27; MMAC: Ch. 7 |
 | 11 (Mar 16) | **Final exam week** | |
 
 ## Outline of Topics
