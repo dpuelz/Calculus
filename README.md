@@ -36,6 +36,10 @@ There will be 5 homework assignments to be turned in via Populi. They will be po
 - [Homework 4](assignments/HW4.pdf). Due Friday, Feb 27 at 11:30a.
 - <span style="color: gray;">Homework 5. Due Friday, Mar 13 at 11:30a.</span>
 
+### Notes and Solutions
+
+- [HW4 Problem 5: Gradient Descent and a Simple Neuron — Solution](notes/HW4_Problem5_solution.pdf)
+
 ### Homework Rubric
 
 1 = All answers incorrect or inadequately addressed and missing deliverables, severely lacking clarity, write-up unprofessional
@@ -84,8 +88,8 @@ There will be 5 quizzes and 5 homework assignments. The quizzes will be on the F
 | 6 (Feb 9) | Constructing derivatives, concavity, smoothness | MC: 20-22; MMAC: §4.1-4.3, §3.4 |
 | 7 (Feb 16) | Partial derivatives, gradients | MC: 23-24; MMAC: §4.4-4.5, §5.1-5.2 |
 | 8 (Feb 23) | Multivariable optimization | MC: 24-26; MMAC: §5.3-5.4 |
-| 9 (Mar 2) | Taylor polynomials, review & synthesis | MC: 27; MMAC: Ch. 7 |
-| 10 (Mar 9) | Review and synthesis | MC: 27; MMAC: Ch. 7 |
+| 9 (Mar 2) | Gradient descent and review and synthesis | MC: 27; MMAC: Ch. 7 |
+| 10 (Mar 9) | Gradient descent and review and synthesis | MC: 27; MMAC: Ch. 7 |
 | 11 (Mar 16) | **Final exam week** | |
 
 ## Outline of Topics
@@ -194,15 +198,22 @@ Lecture Notes:
 - [Lecture 14: Multivariable Optimization](lectures/lecture14_optimization.pdf)
 
 Code for class:
-- [Multivariable Optimization](code/lecture14_optimization.R)
+- [Multivariable Optimization](code/optimization.R)
 
 Readings:
 - _Mosaic Calculus_ (MC) -- Chapters 24-26
 - _Mathematical Modeling and Applied Calculus_ (MMAC) -- §5.3-5.4
 
-### (7) Taylor Polynomials and Synthesis
+### (7) Gradient Descent and Review and Synthesis
 
-**Schedule:** Weeks 9–10 (review and synthesis)
+**Schedule:** Weeks 9–10
+
+Lecture Notes:
+- [Lecture 15: The Gradient Maximizes the Directional Derivative](lectures/lecture15_gradient_maximizes_directional_derivative.pdf)
+- [Lecture 16: Gradient Descent Worked Examples](lectures/lecture16_gradient_descent.pdf)
+
+Code for class:
+- [Gradient Descent Examples](code/gradient_descent_examples.R)
 
 Readings:
 - _Mosaic Calculus_ (MC) -- Chapter 27

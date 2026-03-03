@@ -83,7 +83,7 @@ f_quad_vec(c(1, 2))
 
 # At (1, 1) for f(x,y) = x^2 + y^2:
 # Exact: fx = 2x = 2, fy = 2y = 2, so gradient = (2, 2)
-grad(f_sq_vec, c(1, 1))
+grad(f_sq_vec, c(1, -1))
 
 # At (1, 2) for f(x,y) = x^2*y + 3*x*y^2:
 # Exact: fx = 2xy + 3y^2 = 4 + 12 = 16, fy = x^2 + 6xy = 1 + 12 = 13
@@ -125,7 +125,7 @@ grad(f_sq_vec, c(0, 0))
 
 # Vector field of the gradient: for f(x,y)=x^2+y^2, grad = (2x, 2y)
 # Format: (horizontal_component, vertical_component) at each (x,y)
-vectorfield_plot(x ~ 2*x, y ~ 2*y, bounds(x = -2:2, y = -2:2))
+vectorfield_plot(x ~ 2*x, y ~ 2*y, bounds(x = -20:20, y = -20:20))
 
 # Overlay on contour plot (combine layers)
 contour_plot(f_sq_dist(x, y) ~ x & y, domain(x = -2:2, y = -2:2)) %>%
@@ -150,6 +150,24 @@ directional_deriv <- function(f, x, u) {
   g <- grad(f, x)
   sum(g * u)
 }
+
+
+x = c(1,1)
+trys = 1000000
+DD = rep(NA,trys)
+ustore = list()
+for(i in 1:trys){
+  u = rnorm(2)
+  u = u/(sqrt(sum(u^2)))
+  DD[i] = directional_deriv(f_sq_vec,x,u)
+  ustore[[i]] = u
+}
+imax = which.max(DD)
+ustore[[imax]]
+
+
+
+
 
 # f(x,y) = x^2 + y^2 at (1,1)
 # Direction of steepest ascent: u = grad/|grad| = (1,1)/sqrt(2)
