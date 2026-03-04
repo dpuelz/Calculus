@@ -208,6 +208,9 @@ Readings:
 
 **Schedule:** Weeks 9–10
 
+Slides (presentation):
+- [Neural Networks: A Calculus Perspective](slides/neural-networks-calculus.pdf) — chain rule, gradients, backpropagation (high-level)
+
 Lecture Notes:
 - [Lecture 15: The Gradient Maximizes the Directional Derivative](lectures/lecture15_gradient_maximizes_directional_derivative.pdf)
 - [Lecture 16: Gradient Descent Worked Examples](lectures/lecture16_gradient_descent.pdf)
