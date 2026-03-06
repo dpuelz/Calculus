@@ -6,14 +6,15 @@
 # Part 1: Nontrivial 2-variable function f(x,y) = x^2 + 2xy + 2y^2 - 6x - 8y + 10
 # Part 2: Least squares with one predictor (intercept + slope)
 # Part 3: Multimodal surface with interactive 3D visualization
+# Part 4: Stochastic gradient descent on least squares (larger data, mini-batches)
 #
 # Run this script step-by-step in RStudio.
-# For Part 1.2 visualization: install.packages("mosaicCalc")
-# For Part 3 (3D interactive): install.packages("rgl")
+# Packages: numDeriv, dplyr, plotly
 # ============================================================================
 
 library(numDeriv)
 library(dplyr)
+library(plotly)
 
 # ============================================================================
 # PART 1: MULTIVARIABLE FUNCTION
@@ -185,78 +186,172 @@ points(path_ls$b0[nrow(path_ls)], path_ls$b1[nrow(path_ls)], pch = 19, col = "bl
 # ============================================================================
 # PART 3: MULTIMODAL SURFACE WITH INTERACTIVE 3D VISUALIZATION
 # ============================================================================
-# Rastrigin-like function: many local minima, global minimum at (0, 0)
-# f(x,y) = 20 + x^2 + y^2 - 10*cos(2*pi*x) - 10*cos(2*pi*y)
-# Gradient descent can get stuck in local minima depending on starting point!
-#
-# Requires: install.packages("rgl")
+# Two functions, each with 3 gradient descent paths.
+# Rotate: click and drag. Zoom: scroll.
 # ============================================================================
 
-if (requireNamespace("rgl", quietly = TRUE)) {
-
-  # Rastrigin function (scaled for nicer visualization)
-  rastrigin <- function(v) {
-    x <- v[1]
-    y <- v[2]
-    20 + x^2 + y^2 - 10*cos(2*pi*x) - 10*cos(2*pi*y)
-  }
-
-  # Analytical gradient
-  rastrigin_grad <- function(v) {
-    x <- v[1]
-    y <- v[2]
-    c(2*x + 20*pi*sin(2*pi*x),
-      2*y + 20*pi*sin(2*pi*y))
-  }
-
-  # Run gradient descent from multiple starting points
-  starts <- list(
-    c(0.5, 0.5),   # near global min
-    c(2, 2),       # may converge to local min
-    c(-1.5, 1.5),  # different basin
-    c(3, 0)        # far from origin
-  )
-
-  paths <- list()
-  for (i in seq_along(starts)) {
-    gd <- gradient_descent(rastrigin, rastrigin_grad, x0 = starts[[i]],
-                           alpha = 0.02, n_iter = 100)
-    paths[[i]] <- gd$history
-  }
-
-  # ----------------------------------------------------------------------------
-  # 3.1 Interactive 3D surface with gradient descent paths
-  # ----------------------------------------------------------------------------
-
-  grid_x <- seq(-4, 4, length.out = 80)
-  grid_y <- seq(-4, 4, length.out = 80)
-  z_surf <- outer(grid_x, grid_y, Vectorize(function(x, y) rastrigin(c(x, y))))
-
-  # Cap z for cleaner visualization (Rastrigin can get large)
-  z_cap <- pmin(z_surf, 80)
-
-  rgl::open3d()
-  rgl::surface3d(grid_x, grid_y, z_cap, color = "lightblue", alpha = 0.8)
-
-
-  # Add gradient descent paths as 3D lines
-  colors <- c("red", "darkgreen", "orange", "purple")
-  for (i in seq_along(paths)) {
-    p <- paths[[i]]
-    z_path <- apply(p, 1, function(v) min(rastrigin(v), 80))
-    rgl::lines3d(p[, 1], p[, 2], z_path, col = colors[i], lwd = 3)
-    rgl::points3d(p[1, 1], p[1, 2], z_path[1], col = "green", size = 8)
-    rgl::points3d(p[nrow(p), 1], p[nrow(p), 2], z_path[length(z_path)],
-                  col = "blue", size = 8)
-  }
-
-  rgl::axes3d()
-  rgl::title3d(xlab = "x", ylab = "y", zlab = "f(x,y)")
-  rgl::rgl.bg(color = "white")
-
-  # Try rotating the view: click and drag. Or use rgl::rglwidget() for HTML export.
-  # message("Rotate the 3D plot by clicking and dragging. Zoom with scroll wheel.")
-
-} else {
-  message("Install 'rgl' for interactive 3D: install.packages('rgl')")
+# --- Function 1: f(x,y) = (x^2 + y^2)/2 - 2*cos(x) - 2*cos(y) ---
+# Global min at (0,0). Local minima elsewhere. Paths can get stuck.
+f1 <- function(v) {
+  x <- v[1]; y <- v[2]
+  (x^2 + y^2)/2 - 2*cos(x) - 2*cos(y)
 }
+f1_grad <- function(v) {
+  x <- v[1]; y <- v[2]
+  c(x + 2*sin(x), y + 2*sin(y))
+}
+
+starts1 <- list(c(1, 1), c(2.5, 2.5), c(-2.5, 2.5))
+paths1 <- lapply(starts1, function(s) {
+  gradient_descent(f1, f1_grad, x0 = s, alpha = 0.02, n_iter = 100)$history
+})
+
+grid_x <- seq(-4, 4, length.out = 60)
+grid_y <- seq(-4, 4, length.out = 60)
+z1 <- outer(grid_x, grid_y, Vectorize(function(x, y) f1(c(x, y))))
+z1_cap <- pmin(z1, 15)
+
+p1 <- plot_ly(x = grid_x, y = grid_y, z = z1_cap, type = "surface",
+              colorscale = "Blues", opacity = 0.9, showscale = TRUE)
+colors <- c("red", "blue", "orange")
+for (i in 1:3) {
+  pt <- paths1[[i]]
+  z_path <- pmin(apply(pt, 1, f1), 15)
+  p1 <- p1 %>% add_trace(x = pt[, 1], y = pt[, 2], z = z_path,
+                         type = "scatter3d", mode = "lines+markers",
+                         name = paste0("Start ", round(starts1[[i]][1], 1), ", ", round(starts1[[i]][2], 1)),
+                         line = list(color = colors[i], width = 4),
+                         marker = list(size = 4))
+}
+p1 <- p1 %>% layout(
+  title = "f(x,y) = (x^2 + y^2)/2 - 2*cos(x) - 2*cos(y)",
+  scene = list(
+    xaxis = list(title = "x"),
+    yaxis = list(title = "y"),
+    zaxis = list(title = "f(x,y)")
+  )
+)
+p1
+
+# --- Function 2: f(x,y) = (x² - 4)² + (y² - 4)² ---
+# Four global minima at (±2, ±2). Paths converge to different minima.
+f2 <- function(v) {
+  x <- v[1]; y <- v[2]
+  (x^2 - 4)^2 + (y^2 - 4)^2
+}
+f2_grad <- function(v) {
+  x <- v[1]; y <- v[2]
+  c(4*x*(x^2 - 4), 4*y*(y^2 - 4))
+}
+
+starts2 <- list(c(1, 1), c(3.5, -1.5), c(-3.5, 1.5))
+paths2 <- lapply(starts2, function(s) {
+  gradient_descent(f2, f2_grad, x0 = s, alpha = 0.003, n_iter = 500)$history
+})
+
+grid_x2 <- seq(-4, 4, length.out = 60)
+grid_y2 <- seq(-4, 4, length.out = 60)
+z2 <- outer(grid_x2, grid_y2, Vectorize(function(x, y) f2(c(x, y))))
+z2_cap <- pmin(z2, 50)
+
+p2 <- plot_ly(x = grid_x2, y = grid_y2, z = z2_cap, type = "surface",
+              colorscale = "Greens", opacity = 0.9, showscale = TRUE)
+for (i in 1:3) {
+  pt <- paths2[[i]]
+  z_path <- pmin(apply(pt, 1, f2), 50)
+  p2 <- p2 %>% add_trace(x = pt[, 1], y = pt[, 2], z = z_path,
+                         type = "scatter3d", mode = "lines+markers",
+                         name = paste0("Start ", round(starts2[[i]][1], 1), ", ", round(starts2[[i]][2], 1)),
+                         line = list(color = colors[i], width = 4),
+                         marker = list(size = 4))
+}
+p2 <- p2 %>% layout(
+  title = "f(x,y) = (x^2 - 4)^2 + (y^2 - 4)^2",
+  scene = list(
+    xaxis = list(title = "x"),
+    yaxis = list(title = "y"),
+    zaxis = list(title = "f(x,y)")
+  )
+)
+p2
+
+# ============================================================================
+# PART 4: STOCHASTIC GRADIENT DESCENT (LEAST SQUARES)
+# ============================================================================
+# Larger simulated dataset. SGD uses small random batches each iteration.
+# Loss: L(b0, b1) = sum((y_i - b0 - b1*x_i)^2)
+# Same 3D surface style as Part 3.
+# ============================================================================
+
+set.seed(42)
+n_sim <- 200
+x_sim <- runif(n_sim, 0, 5)
+y_sim <- 1.5 + 0.8 * x_sim + rnorm(n_sim, sd = 0.5)
+
+sse_sim <- function(beta, x, y) {
+  y_hat <- beta[1] + beta[2] * x
+  sum((y - y_hat)^2)
+}
+
+sse_grad_batch <- function(beta, x, y) {
+  e <- y - (beta[1] + beta[2] * x)
+  c(-2 * sum(e), -2 * sum(e * x))
+}
+
+# Stochastic gradient descent: each step uses a random mini-batch
+batch_size <- 2
+n_epochs <- 50
+alpha_sgd <- 0.0003
+beta_sgd <- c(-5, 5)
+history_sgd <- matrix(NA, nrow = n_epochs * ceiling(n_sim / batch_size) + 1, ncol = 2)
+history_sgd[1, ] <- beta_sgd
+row <- 1
+
+for (epoch in 1:n_epochs) {
+  idx <- sample(n_sim)
+  for (i in seq(1, n_sim, by = batch_size)) {
+    batch_idx <- idx[i:min(i + batch_size - 1, n_sim)]
+    x_batch <- x_sim[batch_idx]
+    y_batch <- y_sim[batch_idx]
+    g <- sse_grad_batch(beta_sgd, x_batch, y_batch)
+    beta_sgd <- beta_sgd - alpha_sgd * g
+    row <- row + 1
+    history_sgd[row, ] <- beta_sgd
+  }
+}
+history_sgd <- na.omit(history_sgd)
+
+# OLS solution for reference
+coef(lm(y_sim ~ x_sim))
+
+# 3D surface: SSE as function of (b0, b1)
+ols_coef <- coef(lm(y_sim ~ x_sim))
+grid_b0 <- seq(max(0, ols_coef[1] - 1.5), ols_coef[1] + 1.5, length.out = 80)
+grid_b1 <- seq(0, ols_coef[2] + 0.6, length.out = 80)
+sse_surf <- outer(grid_b0, grid_b1, Vectorize(function(b0, b1) sse_sim(c(b0, b1), x_sim, y_sim)))
+z_sgd <- apply(history_sgd, 1, function(b) sse_sim(b, x_sim, y_sim))
+
+# Cap z so the bowl curvature is visible (avoids flat plateau at high SSE)
+z_cap <- min(max(z_sgd) * 2.5, quantile(sse_surf, 0.95))
+sse_cap <- pmin(sse_surf, z_cap)
+
+p3 <- plot_ly(x = grid_b0, y = grid_b1, z = sse_cap, type = "surface",
+              colorscale = "Viridis", opacity = 0.95, showscale = TRUE,
+              contours = list(z = list(show = TRUE, usecolormap = FALSE,
+                highlightcolor = "white", project = list(z = TRUE))))
+p3 <- p3 %>% add_trace(x = history_sgd[, 1], y = history_sgd[, 2],
+                       z = pmin(z_sgd, z_cap),
+                       type = "scatter3d", mode = "lines+markers",
+                       name = "SGD path",
+                       line = list(color = "darkblue", width = 3),
+                       marker = list(size = 2))
+p3 <- p3 %>% layout(
+  title = "L(b0,b1) = sum((y_i - b0 - b1*x_i)^2)  [Stochastic gradient descent]",
+  scene = list(
+    xaxis = list(title = "b0 (intercept)"),
+    yaxis = list(title = "b1 (slope)"),
+    zaxis = list(title = "SSE"),
+    camera = list(eye = list(x = 1.4, y = 1.4, z = 1.1))
+  )
+)
+p3
