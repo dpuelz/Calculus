@@ -5,9 +5,11 @@
 #
 # Part 1: Nontrivial 2-variable function f(x,y) = x^2 + 2xy + 2y^2 - 6x - 8y + 10
 # Part 2: Least squares with one predictor (intercept + slope)
+# Part 3: Multimodal surface with interactive 3D visualization
 #
 # Run this script step-by-step in RStudio.
 # For Part 1.2 visualization: install.packages("mosaicCalc")
+# For Part 3 (3D interactive): install.packages("rgl")
 # ============================================================================
 
 library(numDeriv)
@@ -179,3 +181,82 @@ names(path_ls) <- c("b0", "b1")
 lines(path_ls$b0, path_ls$b1, col = "red", lwd = 2)
 points(path_ls$b0[1], path_ls$b1[1], pch = 19, col = "green", cex = 1.5)
 points(path_ls$b0[nrow(path_ls)], path_ls$b1[nrow(path_ls)], pch = 19, col = "blue", cex = 1.5)
+
+# ============================================================================
+# PART 3: MULTIMODAL SURFACE WITH INTERACTIVE 3D VISUALIZATION
+# ============================================================================
+# Rastrigin-like function: many local minima, global minimum at (0, 0)
+# f(x,y) = 20 + x^2 + y^2 - 10*cos(2*pi*x) - 10*cos(2*pi*y)
+# Gradient descent can get stuck in local minima depending on starting point!
+#
+# Requires: install.packages("rgl")
+# ============================================================================
+
+if (requireNamespace("rgl", quietly = TRUE)) {
+
+  # Rastrigin function (scaled for nicer visualization)
+  rastrigin <- function(v) {
+    x <- v[1]
+    y <- v[2]
+    20 + x^2 + y^2 - 10*cos(2*pi*x) - 10*cos(2*pi*y)
+  }
+
+  # Analytical gradient
+  rastrigin_grad <- function(v) {
+    x <- v[1]
+    y <- v[2]
+    c(2*x + 20*pi*sin(2*pi*x),
+      2*y + 20*pi*sin(2*pi*y))
+  }
+
+  # Run gradient descent from multiple starting points
+  starts <- list(
+    c(0.5, 0.5),   # near global min
+    c(2, 2),       # may converge to local min
+    c(-1.5, 1.5),  # different basin
+    c(3, 0)        # far from origin
+  )
+
+  paths <- list()
+  for (i in seq_along(starts)) {
+    gd <- gradient_descent(rastrigin, rastrigin_grad, x0 = starts[[i]],
+                           alpha = 0.02, n_iter = 100)
+    paths[[i]] <- gd$history
+  }
+
+  # ----------------------------------------------------------------------------
+  # 3.1 Interactive 3D surface with gradient descent paths
+  # ----------------------------------------------------------------------------
+
+  grid_x <- seq(-4, 4, length.out = 80)
+  grid_y <- seq(-4, 4, length.out = 80)
+  z_surf <- outer(grid_x, grid_y, Vectorize(function(x, y) rastrigin(c(x, y))))
+
+  # Cap z for cleaner visualization (Rastrigin can get large)
+  z_cap <- pmin(z_surf, 80)
+
+  rgl::open3d()
+  rgl::surface3d(grid_x, grid_y, z_cap, color = "lightblue", alpha = 0.8)
+
+
+  # Add gradient descent paths as 3D lines
+  colors <- c("red", "darkgreen", "orange", "purple")
+  for (i in seq_along(paths)) {
+    p <- paths[[i]]
+    z_path <- apply(p, 1, function(v) min(rastrigin(v), 80))
+    rgl::lines3d(p[, 1], p[, 2], z_path, col = colors[i], lwd = 3)
+    rgl::points3d(p[1, 1], p[1, 2], z_path[1], col = "green", size = 8)
+    rgl::points3d(p[nrow(p), 1], p[nrow(p), 2], z_path[length(z_path)],
+                  col = "blue", size = 8)
+  }
+
+  rgl::axes3d()
+  rgl::title3d(xlab = "x", ylab = "y", zlab = "f(x,y)")
+  rgl::rgl.bg(color = "white")
+
+  # Try rotating the view: click and drag. Or use rgl::rglwidget() for HTML export.
+  # message("Rotate the 3D plot by clicking and dragging. Zoom with scroll wheel.")
+
+} else {
+  message("Install 'rgl' for interactive 3D: install.packages('rgl')")
+}

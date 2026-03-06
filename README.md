@@ -211,6 +211,9 @@ Readings:
 Slides (presentation):
 - [Neural Networks: A Calculus Perspective](slides/neural-networks-calculus.pdf) — chain rule, gradients, backpropagation (high-level)
 
+Python notebooks (companion to neural network slides):
+- [basic_nn.ipynb](code/basic_nn.ipynb), [classification_nn.ipynb](code/classification_nn.ipynb), [MNIST.ipynb](code/MNIST.ipynb)
+
 Lecture Notes:
 - [Lecture 15: The Gradient Maximizes the Directional Derivative](lectures/lecture15_gradient_maximizes_directional_derivative.pdf)
 - [Lecture 16: Gradient Descent Worked Examples](lectures/lecture16_gradient_descent.pdf)
@@ -221,6 +224,3 @@ Code for class:
 Readings:
 - _Mosaic Calculus_ (MC) -- Chapter 27
 - _Mathematical Modeling and Applied Calculus_ (MMAC) -- Ch. 7
-
-Code for class:
-- [TBA](code/)
