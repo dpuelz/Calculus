@@ -99,6 +99,7 @@ points(2, 1, pch = 19, col = "blue", cex = 1.5)
 # Data: (1,2), (2,3), (3,5)
 x_data <- c(1, 2, 3)
 y_data <- c(2, 3, 5)
+plot(x_data,y_data,pch=19,cex=2)
 
 # ----------------------------------------------------------------------------
 # 2.1 Loss and gradient functions
@@ -118,9 +119,9 @@ sse_grad <- function(beta, x, y) {
 # 2.2 Gradient descent for least squares
 # ----------------------------------------------------------------------------
 
-beta0 <- c(0, 0)
-alpha <- 0.01
-n_iter <- 50
+beta0 <- c(-3, -3)
+alpha <- 0.001
+n_iter <- 500
 
 history_ls <- matrix(NA, nrow = n_iter + 1, ncol = 2)
 history_ls[1, ] <- beta0
@@ -167,8 +168,8 @@ legend("topleft", legend = c("OLS", "Gradient descent"), col = c("blue", "red"),
 # 2.5 Contour plot of SSE surface (optional)
 # ----------------------------------------------------------------------------
 
-grid_b0 <- seq(0, 4, by = 0.1)
-grid_b1 <- seq(0, 3, by = 0.1)
+grid_b0 <- seq(-5, 5, by = 0.05)
+grid_b1 <- seq(-5, 5, by = 0.05)
 sse_vals <- outer(grid_b0, grid_b1, Vectorize(function(b0, b1) sse(c(b0, b1), x_data, y_data)))
 
 contour(grid_b0, grid_b1, sse_vals, xlab = expression(beta[0]), ylab = expression(beta[1]),
