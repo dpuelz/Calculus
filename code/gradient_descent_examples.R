@@ -299,10 +299,10 @@ sse_grad_batch <- function(beta, x, y) {
 }
 
 # Stochastic gradient descent: each step uses a random mini-batch
-batch_size <- 2
-n_epochs <- 50
-alpha_sgd <- 0.0003
-beta_sgd <- c(-5, 5)
+batch_size <- 10
+n_epochs <- 1000
+alpha_sgd <- 0.0001
+beta_sgd <- c(-1, 1)
 history_sgd <- matrix(NA, nrow = n_epochs * ceiling(n_sim / batch_size) + 1, ncol = 2)
 history_sgd[1, ] <- beta_sgd
 row <- 1

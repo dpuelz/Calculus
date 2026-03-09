@@ -210,6 +210,7 @@ Readings:
 
 Slides (presentation):
 - [Neural Networks: A Calculus Perspective](slides/neural-networks-calculus.pdf) — chain rule, gradients, backpropagation (high-level)
+- [Neural Networks: Beyond the Basics](slides/neural-networks-beyond-the-basics.pdf)
 
 Python notebooks (companion to neural network slides):
 - [basic_nn.ipynb](code/basic_nn.ipynb), [classification_nn.ipynb](code/classification_nn.ipynb), [MNIST.ipynb](code/MNIST.ipynb)
